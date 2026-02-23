@@ -1,7 +1,7 @@
 services:
   postgres:
     image: postgres:16
-    container_name: automation-platform-postgres
+    container_name: automation-platform
     env_file:
       - .env
     environment:
