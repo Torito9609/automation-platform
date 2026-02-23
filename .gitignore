@@ -1,33 +1,61 @@
-HELP.md
+# ===== Java / Build =====
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+out/
 
-### VS Code ###
+# ===== Gradle =====
+.gradle/
+**/build/
+
+# ===== Maven Wrapper (NO ignorar .mvn/ ni mvnw*) =====
+
+# ===== IntelliJ IDEA =====
+.idea/
+*.iml
+
+# ===== VS Code =====
 .vscode/
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Env / Secrets =====
+.env
+.env.*
+*.env
+
+# Spring Boot config files that may contain secrets
+application-local.yml
+application-local.yaml
+application-local.properties
+application-dev.yml
+application-dev.yaml
+application-dev.properties
+application-prod.yml
+application-prod.yaml
+application-prod.properties
+config/application-*.yml
+config/application-*.properties
+
+# ===== Docker secrets / overrides =====
+docker-compose.override.yml
+docker-compose.local.yml
+secrets/
+*.pem
+*.key
+*.p12
+*.jks
+
+# ===== Test reports / coverage =====
+**/surefire-reports/
+**/failsafe-reports/
+coverage/
+*.exec
+
+# ===== Misc =====
+*.pid
